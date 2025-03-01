@@ -1,4 +1,4 @@
-# Sign_Language_Interpreter
+# Hand_Tracking & Sign_Language_Interpreter
 It's Sign Language Interpreter using Machine and Deep Learning, but here we're only making this project for Single Handed alphabets
 
 # Hand Gesture Recognition using Machine Learning
