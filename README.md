@@ -1,26 +1,33 @@
-# Hand_Tracking & Sign_Language_Interpreter
-It's Sign Language Interpreter using Machine and Deep Learning, but here we're only making this project for Single Handed alphabets
+# Hand Tracking & Sign Language Interpreter
 
-# Hand Gesture Recognition using Machine Learning
-This project implements a real-time hand gesture recognition system using OpenCV, MediaPipe, and a Random Forest classifier.
+This project is a **Sign Language Interpreter** using **Machine Learning**, designed specifically for recognizing single-handed alphabets.
+
+## Hand Gesture Recognition using Machine Learning
+This project implements a **real-time hand gesture recognition system** using **OpenCV, MediaPipe, and a Random Forest classifier**.
 
 ## Features
-- Hand tracking with `HAND_TRACKING.py`.
-- Image collection for training with `collect_imgs.py`.
-- Dataset creation with `create_dataset.py`.
-- Model training using `train_classifier.py`.
-- Real-time gesture inference with `inference_classifier.py`.
+- **Hand tracking** (`HAND_TRACKING.py`) - Detects and tracks hand landmarks.
+- **Image collection** (`collect_imgs.py`) - Captures training images for single-handed alphabets.
+- **Dataset creation** (`create_dataset.py`) - Processes collected images and generates dataset.
+- **Model training** (`train_classifier.py`) - Trains a classifier for hand gesture recognition.
+- **Real-time inference** (`inference_classifier.py`) - Recognizes hand gestures in real-time.
 
-The easiest way to make this project work is by running each file at single time. 
-First Run the Collect Images file for collecting entire data for Alphabets only for single hand, then run the create dataset file so it can make a pickle file, after that run the train classifier file so it can train our entire dataset for recognizing. And Lastly run the interference file for recognizing the alphabets for single handed. 
+## Usage Guide
+1. **Collect Training Data**  
+   Run `collect_imgs.py` to capture images for single-handed alphabets.
+2. **Create Dataset**  
+   Run `create_dataset.py` to generate a pickle file for training.
+3. **Train the Model**  
+   Run `train_classifier.py` to train the classifier on the dataset.
+4. **Perform Real-Time Recognition**  
+   Run `inference_classifier.py` to recognize hand gestures.
 
-
-### **Installed Libraries:**
-1. **OpenCV (`cv2`)** - Used for image capture, processing, and displaying results.
-2. **MediaPipe (`mediapipe`)** - Used for hand tracking and extracting hand landmarks.
-3. **NumPy (`numpy`)** - Used for handling numerical computations and feature extraction.
-4. **scikit-learn (`sklearn`)** - Used for training and evaluating the machine learning model.
-5. **pickle (`pickle`)** - Used for saving and loading the trained model and dataset.
-6. **os (`os`)** - Used for handling file system operations.
-7. **time (`time`)** - Used for calculating FPS in the `HAND_TRACKING.py` script.
+## Installed Libraries
+- **OpenCV (`cv2`)** - Image capture, processing, and display.
+- **MediaPipe (`mediapipe`)** - Hand tracking and landmark extraction.
+- **NumPy (`numpy`)** - Numerical operations and feature extraction.
+- **scikit-learn (`sklearn`)** - Machine learning model training and evaluation.
+- **pickle (`pickle`)** - Saving and loading models/datasets.
+- **os (`os`)** - File system operations.
+- **time (`time`)** - FPS calculations for `HAND_TRACKING.py`.
 
